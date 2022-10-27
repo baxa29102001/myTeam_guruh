@@ -1,0 +1,83 @@
+.herosection{
+    background-image: url(../img/Group\ 8.png), url(../img/Group\ 7.png);
+    background-repeat: no-repeat;
+    background-position: left -100px top 170px, right 120px bottom -110px;
+    
+
+
+}
+
+
+
+.find{
+     
+}
+
+
+
+.find {
+  display: flex;
+  // margin: 0 auto;
+  gap: 30px;
+  justify-content: space-between;
+  
+  padding: 15% 0;
+
+  &_right {
+    max-width: 445px;
+
+
+    & ::before{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: #79C8C7;
+        margin-bottom: 89px;
+        
+    }
+    &_the {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+    //   max-width: 445px;
+      width: 100%;
+      color: #ffffff;
+      
+    //   margin-top: 100px;
+    
+    }
+  }
+  &_left {
+    //    padding: 50px ;
+    &_free{
+      display: none;
+    }
+    &_free{
+      margin-top: 24px;
+    }
+    &_talent {
+      width: 100%;
+      max-width: 635px;
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 100px;
+      color: #ffffff;
+      &_one {
+        color: #f67e7e;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $tablet) {
+  .herosection {
+    background-size: 0px 0px, 300px 200px;
+    background-position: 0 0, 350px 600px;
+    padding-bottom: 200px;
+
+  }
+
+  
+}

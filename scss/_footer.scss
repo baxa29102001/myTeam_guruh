@@ -1,0 +1,109 @@
+.footer {
+  background-color: $darkgreen;
+  padding: 48px 0;
+}
+
+.myteam_home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_very{
+    display: none;
+  }
+  &_pro{
+    display: none;
+  }
+
+  &_ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    &_li {
+      list-style: none;
+      color: white;
+    }
+    &_copy {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 51px;
+      margin-left: -150px;
+      text-align: right;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+    }
+  }
+
+  &_irvine {
+    &_hill {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: #ffffff;
+      max-width: 445px;
+      margin-left: -200px;
+    }
+  }
+  &_about {
+    &_home {
+      display: flex;
+      gap: 40px;
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  
+
+  .myteam_home {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+    
+    &_very {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 34px;
+      margin-right: 0px;
+      text-align: right;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+    }
+    &_irvine {
+      display: flex;
+      flex-direction: column;
+      // margin-left: 150px;
+      &_hill{
+        margin: 0 auto;
+        max-width: 288px;
+        text-align: center;
+      }
+    }
+
+    &_pro {
+      display: flex;
+      gap: 36px;
+      margin-top: 33px;
+      &_lorem {
+        list-style: none;
+      }
+    }
+    &_ul {
+      display: none;
+      &_copy {
+        display: none;
+      }
+    }
+  }
+}
