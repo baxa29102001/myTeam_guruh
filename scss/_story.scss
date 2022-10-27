@@ -1,0 +1,146 @@
+#story {
+    background-color: $bg_light_blue;
+    background-image: url("../img/story_back.svg"), url("../img/story_back1.svg");
+
+    background-position: top 0 left 0, bottom -17% right 0%;
+    background-repeat: no-repeat;
+
+    .story_items {
+        padding-bottom: 151px;
+
+        &_title {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 140px;
+            margin-bottom: 56px;
+
+            p {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                color: $white;
+
+                span {
+                    color: $air_color;
+                }
+            }
+        }
+
+        &_cards {
+            display: flex;
+            justify-content: space-between;
+
+            .cards {
+                background-image: url("../img/sotry_cards.svg");
+                background-repeat: no-repeat;
+                background-position: top 0px left 135px;
+                width: 31.5%;
+                text-align: center;
+                color: $white;
+
+                .desc {
+                    padding-top: 36px;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+
+                h4 {
+                    padding-top: 24px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $air_color;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 18px;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    #story {
+        background-position: top 0% left 0%, bottom -9% left 100%;
+
+        .story_items {
+            .story_items_title {
+                text-align: center;
+                width: 100% !important;
+
+                p {
+                    font-weight: 700 !important;
+                    font-size: 32px !important;
+                    line-height: 32px !important;
+                }
+            }
+
+            .story_items_cards {
+                @include display_flex_column;
+                margin-top: 48px;
+                .cards {
+                    background-image: url("../img/sotry_cards.svg");
+                    background-repeat: no-repeat;
+                    background-position: top 0% left 50%;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 48px !important;
+                    h4 {
+                        margin-top: -20px;
+                    }
+
+                    img {
+                        margin-top: -20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    #story {
+        background-position: top 0% left 0%, bottom -9% left 100%;
+
+        .story_items {
+            .story_items_title {
+                text-align: center;
+                width: 68% !important;
+
+                p {
+                    font-weight: 700 !important;
+                    font-size: 32px !important;
+                    line-height: 32px !important;
+                }
+            }
+
+            .story_items_cards {
+                @include display_flex_column;
+                margin-top: 48px;
+                .cards {
+                    background-image: url("../img/sotry_cards.svg");
+                    background-repeat: no-repeat;
+                    background-position: top 0% left 50%;
+                    width: 83%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 48px !important;
+                    h4 {
+                        margin-top: -20px;
+                    }
+
+                    img {
+                        margin-top: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+}

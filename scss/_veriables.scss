@@ -1,0 +1,31 @@
+$bg_blue: #012F34;
+$bg_light_blue:#014E56;
+$pink:#F67E7E;
+$white:#FFFFFF;
+$air_color:#79C8C7;
+
+
+$mobile:375px;
+$tabled:768px;
+$desktop:1440px;
+
+@mixin display_align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin display_align_justify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin display__justifyBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin display_flex_column {
+    display: flex;
+    flex-direction: column;
+}
